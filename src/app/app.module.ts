@@ -16,6 +16,7 @@ import { MessageService } from './message.service';
 import { MessagesComponent } from './messages/messages.component';
 
 import { AppRoutingModule } from './app-routing.module';
+import { HeroSearchComponent } from './hero-search/hero-search.component';
 
 
 
@@ -39,9 +40,10 @@ import { AppRoutingModule } from './app-routing.module';
     DashboardComponent,
     HeroesComponent,
     HeroDetailComponent,
-    MessagesComponent
+    MessagesComponent,
+    HeroSearchComponent
   ],
-  providers: [ HeroService, MessageService ],
+  providers: [ HeroService, MessageService, InMemoryDataService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
